@@ -7,7 +7,7 @@ export default function Home() {
     <>
        <h1>Hello World!</h1>
 
-       <Link href={"/otherPage"}>別ページへ遷移</Link>
+       <Link href={"/myPage"}>マイページへ遷移</Link>
     </>
   )
 }
