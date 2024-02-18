@@ -4,10 +4,10 @@ import { Card, CardHeader, CardBody, CardFooter, Text, SimpleGrid, Heading, Butt
 
 export default function Home() {
   return (
-		<SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
+	<SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
 			<Card>
 				<CardHeader>
-					<Heading size='md'> Customer dashboard</Heading>
+					<Heading size='md'> Sample dashboard</Heading>
 				</CardHeader>
 				<CardBody>
 					<Text>View a summary of all your customers over the last month.</Text>
@@ -18,7 +18,7 @@ export default function Home() {
 			</Card>
 			<Card>
 				<CardHeader>
-					<Heading size='md'> Customer dashboard</Heading>
+					<Heading size='md'> Sample dashboard</Heading>
 				</CardHeader>
 				<CardBody>
 					<Text>View a summary of all your customers over the last month.</Text>
@@ -29,7 +29,7 @@ export default function Home() {
 			</Card>
 			<Card>
 				<CardHeader>
-					<Heading size='md'> Customer dashboard</Heading>
+					<Heading size='md'> Sample dashboard</Heading>
 				</CardHeader>
 				<CardBody>
 					<Text>View a summary of all your customers over the last month.</Text>
@@ -38,6 +38,6 @@ export default function Home() {
 					<Button>View here</Button>
 				</CardFooter>
 			</Card>
-		</SimpleGrid>
+	</SimpleGrid>
   )
 }
