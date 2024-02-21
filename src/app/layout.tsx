@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Providers } from './providers';
 import TopHeader from "./components/topHeader";
+import Sidebar from "./components/sideBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <TopHeader />
-          {children}
+          <div style={{ display: 'flex' }}>
+            <Sidebar />
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

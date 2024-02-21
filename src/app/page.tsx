@@ -4,7 +4,7 @@ import { Card, CardHeader, CardBody, CardFooter, Text, SimpleGrid, Heading, Butt
 
 export default function Home() {
   return (
-	<SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
+	<SimpleGrid spacing={4} columns={3} maxH='200px'>
 			<Card>
 				<CardHeader>
 					<Heading size='md'> Sample dashboard</Heading>
