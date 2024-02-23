@@ -20,7 +20,6 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <Providers>
-          <TopHeader />
           <div style={{ display: 'flex' }}>
             <Sidebar />
             {children}
