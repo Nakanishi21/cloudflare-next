@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Providers } from './providers';
-import TopHeader from "./components/topHeader";
 import Sidebar from "./components/sideBar";
+import { HStack } from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +20,10 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <Providers>
-          <div style={{ display: 'flex' }}>
+          <HStack spacing={5} align="flex-start">
             <Sidebar />
-            {children}
-          </div>
+            <div style={{ paddingTop: "30px" }}>{children}</div>
+          </HStack>
         </Providers>
       </body>
     </html>

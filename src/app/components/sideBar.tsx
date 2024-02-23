@@ -12,7 +12,7 @@ const Sidebar = () => {
 ];
 
 return (
-  <Box minHeight="100vh" bg="gray.200" w="200px">
+  <Box minHeight="100vh" bg="gray.200" w="200px" style={{paddingTop: "20px"}}>
     {menuItems.map((item) => (
       <label key={item.name}>
         <Box mt="10px" ml="10px">
